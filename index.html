@@ -14,6 +14,7 @@
         flex-direction: column;
       }
     </style>
+    <script src="./index.js" defer></script>
     <!-- Google Font-->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -23,11 +24,13 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <audio controls autoplay unmuted>
-      <source src="happy.mp3" type="audio/mpeg">
-    </audio>
+    <div style="display: flex; justify-content: center;">
+      <audio id="music" autoplay unmuted id="music">
+        <source src="happy.mp3" type="audio/mpeg">
+      </audio>
+    </div>
     <div class="card">
-      <div class="outside">
+      <div id="card" class="outside">
         <div class="front">
           <p>Sanah Helwah</p>
           <p>To </p>
@@ -40,7 +43,7 @@
           </div>
         </div>
         <div id="img_placeholder" class="back">
-           <img src="zarifah.jpg" alt="oke">
+           <img id="img" src="zarifah.jpg" alt="oke">
            <p>ITS YOUR LAST TEEN!</p>
         </div>
       </div>
@@ -51,5 +54,7 @@
         </a>
       </div>
     </div>
+    <script>
+    </script>
   </body>
 </html>
